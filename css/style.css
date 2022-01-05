@@ -1,0 +1,720 @@
+/* --------------СБРОС ОТСТУПОВ---------------------------------------------------------------------- */
+
+*,
+ *::before,
+ *::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box; 
+    /* скинуты все отступы */
+}
+a {
+   text-decoration: none;
+}
+ul,
+ol,
+li {
+   list-style: none;
+}
+img {
+   vertical-align: top; 
+   }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;  
+  /* сброшены заголовки */
+}
+
+/* --------------САЙТ---------------------------------------------------------------------- */
+
+html,
+body {
+   height: 100%;
+   min-width: 1100px;
+   line-height: 1;
+   font-size: 16px;
+   color: #000;
+   font-family: 'Regular'; 
+    /* в ковычках название шрифта */
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+/* --------------ШАПКА---------------------------------------------------------------------- */
+
+.header {
+   background-color: #000;
+}
+
+.container {
+   max-width: 1920px; 
+   margin: 0px auto; 
+}
+
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   min-height: 44px;
+   width: 1110px;
+   margin: 0px auto;
+   padding: 0 16px;
+}
+
+.header-left {
+   display: flex;
+   align-items: center;
+}
+
+.header-right {
+   display: flex;
+   align-items: center;
+}
+
+.contacts {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #969696;
+}
+
+.logo_phone {
+   margin: 0px 15px 0px 0px;
+   width: 16px;
+   height: 16px;
+}
+
+.logo_in {
+   height: 14px;
+   width: 14px;
+}
+
+.in_exit {
+   margin: 0px 0px 0px 10px;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #969696;
+}
+
+.in_exit:hover {
+   color:rgba(224, 223, 207, 0.466)
+}
+
+/* --------------БЛОК МЕНЮ---------------------------------------------------------------------- */
+
+.menu {
+   background: #0F0F0F;
+}
+
+.menu-container {
+   display: flex;
+   width: 1110px;
+   min-height: 80px;
+   justify-content: space-between;
+   padding: 0 16px;
+}
+
+.logo-porten {
+   display: flex;
+   align-items: center;
+   font-family: Post No Bills Jaffna;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 54px;
+   color: #FFFFFF;
+   margin: 15px 380px 15px 0;
+}
+
+
+.porten-menu {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.menu-list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.link-item {
+   font-style: normal;
+   font-weight: normal;
+   font-family: PT Sans;
+   font-size: 14px;
+   padding: 33px 20px;
+   line-height: 18px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.link-item:hover {
+   background-color: #1F1F1F;
+}
+
+.icon-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo-shop {
+   width: 22px;
+   height: 22px;
+}
+
+.logo-search {
+   width: 22px;
+   height: 22px;
+   margin: 0 0 0 40px;
+}
+
+/* --------------СЕКСИЯ ОГЛАВЛЕНИЯ---------------------------------------------------------------------- */
+
+.title {
+   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(/img/Rectangle\ 3.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.title-container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   width: 1100px;
+   min-height: 810px;
+   align-items: center;
+}
+
+.title-name {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   margin: 160px 800px 80px 800px;
+   border: 4px solid #FFFFFF;
+   box-sizing: border-box;
+   padding: 93px 68px;
+}
+
+.title-porten {
+   font-family: Post No Bills Jaffna;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 64px;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.title-town {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 28px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.title-discription {
+   width: 730px;
+   min-height: 96px;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 150%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.title-line {
+   margin: 3px 0 4px 0;
+}
+
+/* --------------СЕКСИЯ КОЛЕКЦИЯ---------------------------------------------------------------------- */
+
+.colection {
+   min-height: 730px;
+   background: #000000;
+}
+
+.product {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+   background: #000000;
+   width: 50%;
+}
+
+.title-product {
+   font-family: Playfair Display;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.product-line {
+   margin: 50px 0;
+}
+
+.product-item {
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.block-product {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   margin: 0 25px; 
+}
+
+.product-img {
+   padding: 55px 22px;
+   align-items: center;
+   background: #191B1C;
+}
+
+.img-clock {
+   width: 100%;
+   height: auto;
+}
+
+.link-clock {
+   margin: 25px 0 10px 0;
+   font-family: Playfair Display;
+   font-size: 18px;
+   line-height: 21px;
+   color: #FFFFFF;
+}
+
+.product-prise {
+   font-family: Playfair Display;
+   font-size: 16px;
+   line-height: 19px;
+   color: #D0D0D0;
+}
+
+.new-colection {
+   min-height: 730px;
+   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(/img/Rectangle\ 8.png), #000000;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 50%;
+}
+
+.block-colection {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   padding-top: 483px;
+}
+
+.title-colection {
+   font-family: Playfair Display;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.colection-line {
+   margin: 30px 0;
+}
+
+.colection-list {
+   flex-direction: row;
+   align-items: center;
+   padding: 12px 28px;
+   border: 1px solid #FFFFFF;
+   box-sizing: border-box;
+   width: 138px;  
+   height: 47px;
+   transition: 0.4s ease-in-out;
+}
+
+.colection-list:hover {
+   background-color: rgb(67, 70, 65);
+}
+
+.colection-list-link {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 23px;
+   text-align: center;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+}
+
+.colection-container {
+   display: flex;
+}
+
+/* --------------СЕКСИЯ ОПИСАНИЕ---------------------------------------------------------------------- */
+
+.old-colection {
+   background-color: #000;
+}
+
+.old-colectiron-container {
+   display: flex;
+   min-height: 600px;
+}
+
+.black-white {
+   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(/img/Rectangle\ 9.png), #000000;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 50%;
+}
+
+.description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+   height: 600px;
+}
+
+.old-title {
+   font-family: Playfair Display;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin: 100px 0 40px 0;
+}
+
+.old-description {
+   width: 471px;
+   height: 173px;
+   align-items: center;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 150%;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 40px 0 61px 0;
+}
+
+.look-list {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 12px 28px;
+   border: 1px solid #FFFFFF;
+   box-sizing: border-box;
+   transition: 0.4s ease-in-out;
+}
+
+.look-list-link {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 23px;
+   text-align: center;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 0px 10px;
+}
+
+.look-list:hover {
+   background-color: rgb(67, 70, 65);
+}
+
+/* --------------СЕКСИЯ ЧАСЫ---------------------------------------------------------------------- */
+
+.clocks {
+   background-color: #000000;
+}
+
+.clocks-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.title-clocks {
+   margin: 120px 0 40px 0;
+   font-family: Playfair Display;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.top-clock {
+   display: flex;
+   justify-content:space-between;
+   margin-bottom: 40px;
+}
+
+.bot-clock {
+   display: flex;
+   justify-content: space-between;
+}
+
+.clocks-block {
+   width: 1109px;
+   height: 850px;
+   margin: 81px 0 150px 0;
+}
+
+.link-clock:hover {
+   color:rgba(224, 223, 207, 0.466)
+}
+
+/* --------------СЕКСИЯ БРЕНДЫ---------------------------------------------------------------------- */
+
+.brands {
+   background: #0F0F0F;
+   min-height: 362px;
+}
+
+.brands-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 1109px;
+}
+
+.title-brands {
+   margin: 60px 0 40px 0;
+   font-family: Playfair Display;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.block-brands {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
+}
+
+/* --------------СЕКСИЯ ИНФО---------------------------------------------------------------------- */
+
+.shop-info {
+   background: linear-gradient(0deg, rgba(15, 15, 15, 0.05), rgba(15, 15, 15, 0.05)), url(/img/Rectangle\ 15.png), #C4C4C4;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 400px;
+}
+
+
+.container-shop-info {
+   display: flex;
+   justify-content: space-between;
+   width: 1109px;
+   padding: 0 16px;
+}
+
+.left-shop-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.left-shop-info-description {
+   width: 350px;
+   height: 147px;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 150%;
+   color: #FFFFFF;
+}
+
+.center-shop-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.top-shop-info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.bot-shop-info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.shop-info-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 10px 20px;
+   background: #0F0F0F;
+   margin: 0 20px 20px 0;
+   transition: 0.4s ease-in-out;
+}
+
+.shop-info-item:hover {
+   background-color:rgba(224, 223, 207, 0.466)
+}
+
+.shop-info-link {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 150%;
+   color: #D0D0D0;
+}
+
+.right-shop-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.right-shop-info-description {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 150%;
+   color: #FFFFFF;
+   width: 350px;
+   height: 42px;
+}
+
+.mail-info {
+   display: flex;
+   justify-content: space-between;
+   margin: 37px 0 37px 0;
+}
+
+.mail {
+   background: rgba(255, 255, 255, 0.4);
+   width: 210px;
+   height: 42px;
+   padding-left: 16px;
+}
+
+.mail[type="text"]::-webkit-input-placeholder {
+   color: rgb(255, 255, 255, 0.4);
+} 
+
+.link-button {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 10px 20px;
+   background: #0F0F0F;
+   transition: 0.4s ease-in-out;
+}
+
+.link-button-click {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 150%;
+   letter-spacing: 0.05em;
+   color: #FFFFFF;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 0px 10px;
+}
+
+.link-button:hover {
+   background-color:rgba(150, 141, 25, 0.466)
+}
+
+.title-shop-info {
+   font-family: Playfair Display;
+   font-size: 24px;
+   line-height: 28px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin: 80px 0 40px 0;
+}
+
+/* --------------ФУТЕР---------------------------------------------------------------------- */
+
+.footer {
+   background: #0F0F0F;
+}
+
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   width: 1109px;
+   min-height: 50px;
+   padding: 0 16px;
+}
+
+.footer-left {
+   display: flex;
+   align-items: center;
+}
+
+.footer-right {
+   display: flex;
+   align-items: center;
+}
+
+.year {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #D0D0D0;
+}
+
+.made {
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 16px;
+   text-align: right;
+   text-decoration-line: underline;
+   color: #D0D0D0;
+}
